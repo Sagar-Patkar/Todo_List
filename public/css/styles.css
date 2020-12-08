@@ -1,0 +1,87 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+.centered {
+    margin-top: 200px;
+    text-align: center;
+}
+.footer {
+    margin-top: 100px;
+    text-align: center;
+}
+hr {
+    width: 50%;
+}
+/* Register and Login page */
+.reg-log {
+    padding: 100px 90px 20px ;
+}
+.reglog {
+    padding-bottom: 10px;
+}
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #heading {
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+  
+  .item:last-child {
+    border-bottom: 0;
+  }
+  
+  input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+  }
+
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+  
+  .todo-p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+  }
+
+  input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #FFFFFF;
+  }
+  
+  ::placeholder {
+    color: grey;
+    opacity: 1;
+  }
+
+  button.logout {
+    text-align: center;
+    margin-left: 590px;
+  }

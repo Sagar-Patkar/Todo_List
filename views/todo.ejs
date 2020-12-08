@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+<div class="box" id="heading">
+    <h1> <%= Day %></h1>
+    <div class="box">
+        <% Items.forEach(function(item){ %>
+            <form action="/delete" method="POST">
+                <div class="item">
+                    <input type="checkbox" name="checkItem" onchange="this.form.submit()" value="<%= item._id %>">
+                    <p class="todo-p"><%= item.name %></p>
+                </div>
+            </form>
+        <% }); %>
+    </div>
+    <form action="/todo" method="POST">
+    <input type="text" name="list" placeholder="New Item" autocomplete="off">
+    <button type="submit" class="new">+</button>
+    </form>
+</div>
+<a href="/logout"><button class="logout btn btn-outline-secondary btn-lg">Logout</button></a>
+<%- include("partials/footer") %>
